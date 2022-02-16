@@ -3,11 +3,11 @@ services:
   cdk:
     build:
       args:
-        - APP_UID=${CDK_UID}
-        - APP_GID=${CDK_GID}
-        - APP_USER=${CDK_USER}
-        - APP_GROUP=${CDK_GROUP}
-        - APP_HOME=${HOME}
+        - CDK_UID=${CDK_UID}
+        - CDK_GID=${CDK_GID}
+        - CDK_USER=${CDK_USER}
+        - CDK_GROUP=${CDK_GROUP}
+        - CDK_HOME=${HOME}
         - DOCKER_GID=${DOCKER_GID}
         - DOCKER_GROUP=${DOCKER_GROUP}
       context: docker/cdk
